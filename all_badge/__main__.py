@@ -14,7 +14,7 @@ except ImportError:
     coverage = None
 
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 DEFAULT_STYLE = 'flat'
@@ -245,8 +245,9 @@ def main(argv=None):
             print('Error: {} Did you run coverage first?'.format(e))
             sys.exit(1)
 
+        coverage_text = args.text if args.text else 'coverage'
         color = DEFAULT_COLOR if args.plain_color else get_color(total)
-        badge = get_badge(total, color, style)
+        badge = get_badge(coverage_text, total, color, style)
 
     # Show or save output
     if args.filepath:
