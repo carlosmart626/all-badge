@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{{ total_width }}" height="20">
+    <g shape-rendering="crispEdges">
+        <path fill="#555" d="M0 0h{{ text_width }}v20H0z"/>
+        <path fill="{{ color }}" d="M{{ text_width }} 0h{{ value_width }}v20H{{ text_width }}"/>
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+        <text x="{{ user_text_margin }}" y="140" transform="scale(.1)" textLength="{{ user_text_width }}">{{ text }}</text>
+        <text x="{{ value_text_margin }}" y="140" transform="scale(.1)" textLength="{{ value_text_width }}">{{ value }}</text>
+    </g>
+</svg>

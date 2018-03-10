@@ -1,0 +1,2 @@
+include README.md README.rst LICENSE.txt AUTHORS.txt
+include all_badge/templates/*.svg
