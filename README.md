@@ -20,7 +20,7 @@ all_badge -f -cov -s flat -o git.svg
 
 ![93%](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/93.svg)
 
-![93%](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/97.svg)
+![97%](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/97.svg)
 
 
 #### Git
@@ -29,7 +29,7 @@ all_badge -c blue -f -git -s flat -o git.svg
 ```
 ![Gitlab example 1](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/git.svg)
 
-![Gitlab example 1](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/git-2.svg)
+![Gitlab example 2](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/git-2.svg)
 
 #### Custom
 ```bash
@@ -48,7 +48,6 @@ all_badge -c brightgreen -o version.svg -f -t 'made by' -v Carlosmart -s for-the
 all_badge -c brightgreen -f -t 'made by' -v Carlosmart -s flat-square -o media/example-custom-3.svg
 ```
 ![Custom 3](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/example-custom-3.svg)
-
 
 ### Detail Usage:
 ```
