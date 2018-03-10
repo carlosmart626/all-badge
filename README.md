@@ -25,10 +25,13 @@ all_badge -f -cov -s flat -o git.svg
 
 #### Git
 ```bash
-all_badge -c blue -f -git -s flat -o git.svg
+all_badge -c brightgreen -f -git -s flat -o git.svg
 ```
 ![Gitlab example 1](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/git.svg)
 
+```bash
+all_badge -c blue -f -git -s flat -o git.svg
+```
 ![Gitlab example 2](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/git-2.svg)
 
 #### Custom
