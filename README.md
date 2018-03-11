@@ -4,7 +4,12 @@ Script to generate badges based in [coverage-badge](https://github.com/dbrgn/cov
 
 Badge styles from [shields.io](https://shields.io)
 
-### Examples:
+## Instalation
+```bash
+pip install all_badge
+```
+
+## Examples:
 
 #### Coverage
 ```bash
@@ -52,7 +57,7 @@ all_badge -c brightgreen -f -t 'made by' -v Carlosmart -s flat-square -o media/e
 ```
 ![Custom 3](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/example-custom-3.svg)
 
-### Detail Usage:
+## Usage:
 ```
 usage: all_badge [-h] [-o FILEPATH] [-p] [-f] [-q] [-version] [-git] [-cov]
                  [-t TEXT] [-v VALUE] [-c COLOR] [-s STYLE]
