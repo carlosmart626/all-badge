@@ -14,7 +14,7 @@ except ImportError:
     coverage = None
 
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 
 DEFAULT_STYLE = 'flat'
@@ -247,7 +247,7 @@ def main(argv=None):
 
         coverage_text = args.text if args.text else 'coverage'
         color = DEFAULT_COLOR if args.plain_color else get_color(total)
-        badge = get_badge("{}%".format(coverage_text), total, color, style)
+        badge = get_badge(coverage_text, "{}%".format(total), color, style)
 
     # Show or save output
     if args.filepath:

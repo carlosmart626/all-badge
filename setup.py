@@ -10,7 +10,7 @@ tests_require = [
 ]
 
 setup(name='all_badge',
-      version='0.1.2',
+      version='0.1.3',
       description='Generate badges for Coverage.py, Git tags and custom.',
       author='Carlos Martinez',
       author_email='me@carlosmart.co',
