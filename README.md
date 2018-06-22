@@ -49,7 +49,7 @@ all_badge -c brightgreen -o version.svg -f -t 'made by' -v Carlosmart -s flat
 ![Custom 1](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/example-custom.svg)
 
 ```bash
-all_badge -c brightgreen -o version.svg -f -t 'made by' -v Carlosmart -s for-the-baddge
+all_badge -c brightgreen -o version.svg -f -t 'made by' -v Carlosmart -s for-the-badge
 ```
 
 ![Custom 2](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/example-custom-2.svg)
