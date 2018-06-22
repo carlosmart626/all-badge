@@ -1,4 +1,6 @@
 # All-badge
+![build](https://travis-ci.org/CarlosMart626/all-badge.svg?branch=master)
+![pypi](https://img.shields.io/pypi/v/all_badge.svg)
 
 Script to generate badges based in [coverage-badge](https://github.com/dbrgn/coverage-badge). Generates coverage badge, git tag badge and you can make your own.
 
