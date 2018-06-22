@@ -1,0 +1,35 @@
+language: python
+python:
+- 3.6
+- 3.5
+- 3.4
+- 2.7
+install:
+- |
+  if [ "$TEST_TYPE" = build ]; then
+    pip install -e .[test]
+  elif [ "$TEST_TYPE" = lint ]; then
+    pip install flake8
+  fi
+script:
+- |
+  if [ "$TEST_TYPE" = lint ]; then
+    echo "Checking Python code lint."
+    flake8 all_badge
+    exit
+  elif [ "$TEST_TYPE" = build ]; then
+    py.test --cov=all_badge all_badge
+  fi
+after_success:
+- |
+  if [ "$TEST_TYPE" = build ]; then
+      coveralls
+  fi
+deploy:
+  provider: pypi
+  user: carlosmart626
+  on:
+    tags: true
+  password:
+    secure: mgkaAMqJV7UMR5zZtkslt02bRo2GGJvD51x+vjCzXi7YWk1L/8cDKdn7LvjkzcTNQ3MOeZ0bxEaXBXMpdeYtyi1CTg4Z6P6ZHI89ZjEOsncu8GYQQaIMifHTo2W09TTuaaHOBXv/Sbwc0V7HjAWYCcEI/Kvuu3w2a4McAEmJb7rXdxf21pGSUDlNfwi5LcSmKF7fikCJ2qz7LU3sEskR1mjf5e203Vhh74euGcyMJkqwqZWciwIXrOOZZZmXOTMmPpL0Cs71CXGf9vMT5n/iMC2/qY8o3xdFMZ43lwnIL1gdOOXsDgz7+hud0aRAzY0MmgDpG0ODx4AVjrMaaagZ3GsGUw3qkeozqJRzHRzizGepdv38d69M1sl83Zt12NyGPLxWJ0hC0pHLvS6BYmhYbiJLJOtiDhdeacbjzjTxuPHr2pDWc7Drf1CFGZUlbHIt5XAk4Z9/RIHqfcnVSbZ/uapFfE0BFVq3UXw7ds4GZuaAppZ2M8IPQ1PvK3ApHPjd3ldcFyi+xYVTU5Pn1rc/xIxx8PkJ41I71tQRw4F/E/oRyv7v9HETDtKTvFRdew3B5+Uccl7nIDCNBEEeQZ75fVIbt7El2cWydKX+46aZb2na0nrcwuaidy6AL4E1IilrFfeRVx738AIGGMCfpmzyRyjnYGnerS00teOnaDZMkcI=
+  distributions: sdist bdist_wheel

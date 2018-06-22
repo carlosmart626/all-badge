@@ -13,7 +13,7 @@ pip install all_badge
 
 #### Coverage
 ```bash
-all_badge -f -cov -s flat -o git.svg
+all_badge -f -cov -s flat -o cov.svg
 ```
 ![15%](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/15.svg)
 
@@ -47,7 +47,7 @@ all_badge -c brightgreen -o version.svg -f -t 'made by' -v Carlosmart -s flat
 ![Custom 1](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/example-custom.svg)
 
 ```bash
-all_badge -c brightgreen -o version.svg -f -t 'made by' -v Carlosmart -s for-the-edge
+all_badge -c brightgreen -o version.svg -f -t 'made by' -v Carlosmart -s for-the-baddge
 ```
 
 ![Custom 2](https://cdn.rawgit.com/carlosmart626/all-badge/master/media/example-custom-2.svg)
@@ -70,11 +70,21 @@ optional arguments:
   -p           Plain color mode. Standard green badge.
   -f           Force overwrite image, use with -o key.
   -q           Don't output any non-error messages.
-  -version     Show version.
+  --version    Show version.
   -git         Build badge for git tag.
   -cov         Build badge for coverage.
   -t TEXT      Badge text.
   -v VALUE     Badge value.
   -c COLOR     Badge color.
   -s STYLE     Badge style.
+```
+
+## Contributing
+Install requirements:
+```
+pip install -e ".[test]"
+```
+Run tests
+```
+pytest .
 ```
