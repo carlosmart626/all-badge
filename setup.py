@@ -5,7 +5,7 @@ from all_badge.__main__ import __version__
 readme = open("README.rst").read()
 
 tests_require = [
-    "pytest==2.8.2",
+    "pytest==9.0.3",
     "pytest-cache==1.0",
     "pytest-cov==2.2.0",
     "pytest-pep8==1.0.6",
